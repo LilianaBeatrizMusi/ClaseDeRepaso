@@ -8,6 +8,7 @@ public class Volver {
             Scanner teclado = new Scanner (System.in);
             System.out.println("Para volver al menú principal presione S, para salir de la app presione Q");
             respuesta = teclado.nextLine();
+            teclado.close();
             
         }while(!(respuesta.equalsIgnoreCase("s")|| respuesta.equalsIgnoreCase("q")));
 
@@ -17,7 +18,6 @@ public class Volver {
             System.out.println("** El programa ha finalizdo **");
             System.exit(0);
         }
-
 
     }
 }
